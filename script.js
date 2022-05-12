@@ -4,6 +4,7 @@ var dropDown = document.getElementById("dropdown");
 var body = document.getElementById("body");
 var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
+var search = document.getElementById("search");
    
 
 
@@ -14,7 +15,8 @@ menuIcon.addEventListener("click", function(){
     body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     body.style.zIndex = "1000";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-
+    nav.style.zIndex = "100000";
+    search.style.zIndex = "100";
 })
 
 
@@ -25,7 +27,8 @@ close.addEventListener("click", function(){
     body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
     body.style.zIndex = "1";
     nav.style.backgroundColor = "#fff";
-
+    nav.style.zIndex = "100";
+    search.style.zIndex = "1000";
 
 })
 
@@ -40,7 +43,8 @@ if(x.matches){
             body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
             body.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
-    
+            nav.style.zIndex = "100";
+            search.style.zIndex = "1000";
         }
     }
 }

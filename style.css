@@ -174,7 +174,7 @@ nav .book:hover{
     nav{
         height: 14vh;
         border-bottom: 2px solid #BF9553;
-        z-index: 99999999;
+        z-index: 100;
     }
     nav .logo img{
         margin-top: 0.3rem;
@@ -202,7 +202,6 @@ nav .book:hover{
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
         padding-top: 0.3rem;
         margin-top: -2rem;
-        z-index: 1000;
     }
     nav ul .logo2{
         display: block;
@@ -213,17 +212,19 @@ nav .book:hover{
     nav ul .border{
         width: 99%;
         border: 1px solid #BF9553;
-        margin-top: -2.05rem;
+        /* margin-top: -2.05rem; */
     }
     nav ul li{
         display: block;
         margin-top: 1rem;
         margin-bottom: 2rem;
-        margin-left: 1rem;
 
     }
     nav ul li a{
         font-size: 1.2rem;
+    }
+    nav .links{
+        margin-top: 2rem;
     }
     nav .book{
         padding: 8px 30px;
@@ -234,7 +235,7 @@ nav .book:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 86vh;
+        height: 100vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/mobile.png);
         position: relative;
         background-size: cover;
@@ -247,22 +248,22 @@ nav .book:hover{
         z-index: 1;
     }
     .hero input{
-        display: none;
+        /* display: none; */
         /* width: 70%; */
-        /* margin-top: -4rem;
+        margin-top: -4rem;
         margin-left: 1rem;
-        z-index: 10;
+        z-index: 1000;
         position: fixed;
         background-color: #fff;
         color: #66369D;
-        background-image: url(./images/search.png); */
+        background-image: url(./images/search.png);
     }
     .hero input::placeholder{
         color: rgba(189, 147, 236, 0.8);
     }
     .hero .text{
         position: absolute;
-        bottom: 4rem;
+        bottom: 8rem;
         z-index: 10;
     }
     .hero .text h2{
