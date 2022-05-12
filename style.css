@@ -9,7 +9,7 @@ html{
 }
 body{
     width: 100%;
-    min-height: 100%;
+    height: 100vh;
     overflow-x: hidden;
 }
 @font-face{
@@ -21,7 +21,6 @@ body{
 
 nav{
     width: 100%;
-    /* height: 5.5rem; */
     height: 13.902vh;
     background-color: #fff;
     box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1); 
@@ -74,6 +73,13 @@ nav .book:hover{
 
 
 /* HERO DESKTOP */
+#body{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(102, 54, 157, 0.2);
+    opacity: 0.5;
+}
 .hero{
     width: 100%;
     height: 86.098vh;
@@ -108,6 +114,7 @@ nav .book:hover{
 }
 .hero .text{
     text-align: center;
+    z-index: 100;
 }
 .hero .text h2{
     color: #BF9553;
@@ -165,14 +172,13 @@ nav .book:hover{
 /* NAV MOBILE */
 @media screen and (max-width:1000px){
     nav{
-        height: 15vh;
+        height: 14vh;
         border-bottom: 2px solid #BF9553;
-        z-index: 100000;
+        z-index: 99999999;
     }
     nav .logo img{
-        margin-top: 0.5rem;
+        margin-top: 0.3rem;
         margin-left: -3rem;
-
     }
     nav svg{
         display: block;
@@ -190,12 +196,13 @@ nav .book:hover{
         display: none;
         position: absolute;
         left: 0;
-        width: 50%;
+        width: 55%;
         height: 100vh;
         background-color: white;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
-        padding-top: 0.5rem;
+        padding-top: 0.3rem;
         margin-top: -2rem;
+        z-index: 1000;
     }
     nav ul .logo2{
         display: block;
@@ -203,8 +210,14 @@ nav .book:hover{
     nav ul img{
         margin-left: -3rem;
     }
+    nav ul .border{
+        width: 99%;
+        border: 1px solid #BF9553;
+        margin-top: -2.05rem;
+    }
     nav ul li{
         display: block;
+        margin-top: 1rem;
         margin-bottom: 2rem;
         margin-left: 1rem;
 
@@ -213,7 +226,7 @@ nav .book:hover{
         font-size: 1.2rem;
     }
     nav .book{
-        padding: 8px 25px;
+        padding: 8px 30px;
         font-size: 1.2rem;
     }
 
@@ -221,13 +234,21 @@ nav .book:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 85vh;
+        height: 86vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/mobile.png);
         position: relative;
+        background-size: cover;
+    }
+    #body{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        background-color: rgba(50, 12, 94, 0.2);
+        z-index: 1;
     }
     .hero input{
-        /* display: none; */
-        width: 70%;
+        display: none;
+        /* width: 70%; */
         /* margin-top: -4rem;
         margin-left: 1rem;
         z-index: 10;
@@ -235,14 +256,14 @@ nav .book:hover{
         background-color: #fff;
         color: #66369D;
         background-image: url(./images/search.png); */
-
     }
-    /* .hero input::placeholder{
+    .hero input::placeholder{
         color: rgba(189, 147, 236, 0.8);
-    } */
+    }
     .hero .text{
         position: absolute;
-        bottom: 2rem;
+        bottom: 4rem;
+        z-index: 10;
     }
     .hero .text h2{
         font-size: 2rem;
