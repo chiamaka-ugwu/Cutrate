@@ -10,7 +10,7 @@ var text = document.getElementById("text");
 
 
 menuIcon.addEventListener("click", function(){    
-    dropDown.style.display = "block";
+    dropDown.style.width = "55%";
     body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     body.style.zIndex = "1000";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
@@ -34,7 +34,7 @@ const x = window.matchMedia("(max-width: 1000px)");
 if(x.matches){
     document.onclick = function(e){
         if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
-            dropDown.style.display = "none";
+            dropDown.style.width = "0";
             body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
             body.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
