@@ -37,7 +37,7 @@ nav .logo{
     margin-left: 5rem;
 }
 nav .logo img{
-    margin-top: 0.5rem;
+    margin-top: 0.3rem;
     width: 4%;
 }
 nav .field{
@@ -193,9 +193,6 @@ nav .book:hover{
         height: 13vh;
         border-bottom: 2px solid #BF9553;
         z-index: 100;
-    }
-    nav .logo{
-        width: 100%;
     }
     nav .logo img{
         margin-top: 1rem;
