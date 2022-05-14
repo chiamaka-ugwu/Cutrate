@@ -249,8 +249,8 @@ nav .book:hover{
     }
     nav ul .border{
         width: 99%;
-        border: 1px solid #BF9553;
-        margin-top: 1px;
+        border: 0.5px solid #BF9553;
+        margin-top: 2px;
     }
     nav ul li{
         display: block;
@@ -303,7 +303,7 @@ nav .book:hover{
     .hero .text{
         position: absolute;
         z-index: 10;
-        margin-top: 5rem;
+        margin-top: 7rem;
     }
     .hero .text h2{
         font-size: 2rem;
