@@ -197,6 +197,7 @@ nav .book:hover{
     nav .logo img{
         margin-top: 0.3rem;
         margin-left: -3rem;
+        width: 60px;
     }
     nav #search1{
         /* display: inline; */
@@ -244,7 +245,7 @@ nav .book:hover{
     }
     nav ul .logo2 img{
         margin-left: 2rem;
-        width: 55px;
+        width: 60px;
     }
     nav ul .border{
         width: 100%;
