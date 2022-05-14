@@ -5,7 +5,8 @@ var body = document.getElementById("body");
 var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
 var search = document.getElementById("search");
-  
+var text = document.getElementById("text");
+ 
 
 
 menuIcon.addEventListener("click", function(){    
@@ -45,6 +46,9 @@ if(x.matches){
             nav.style.backgroundColor = "#fff";
             nav.style.zIndex = "100";
             search.style.zIndex = "1000";
+            if(search.focus){
+                text.style.bottom = "1rem";
+            }
         }
     }
 }

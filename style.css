@@ -220,6 +220,7 @@ nav .book:hover{
     nav ul .border{
         width: 99%;
         border: 1px solid #BF9553;
+        margin-top: 1px;
     }
     nav ul li{
         display: block;
@@ -269,7 +270,7 @@ nav .book:hover{
         color: rgba(189, 147, 236, 0.8);
     }
     .hero .text{
-        position: fixed;
+        position: absolute;
         bottom: 4rem;
         z-index: 10;
     }
