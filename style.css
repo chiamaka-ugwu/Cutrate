@@ -190,12 +190,12 @@ nav .book:hover{
 /* NAV MOBILE */
 @media screen and (max-width:1000px){
     nav{
-        height: 13vh;
+        height: 12vh;
         border-bottom: 2px solid #BF9553;
         z-index: 100;
     }
     nav .logo img{
-        margin-top: 1rem;
+        margin-top: 0.5rem;
         margin-left: -3rem;
         width: 15%;
     }
@@ -219,14 +219,14 @@ nav .book:hover{
     nav svg{
         display: block;
         float: right;
-        margin: 2.1rem;
+        margin: 2rem;
     }
     nav #close{
         display: none;
         font-size: 30px;
         color: #BF9553;
         float: right;
-        margin: 2.1rem;        
+        margin: 2rem;        
     }
     nav ul{
         display: none;
@@ -241,10 +241,10 @@ nav .book:hover{
     }
     nav ul .logo2{
         display: block;
-        height: 12vh;
+        height: 11vh;
     }
     nav ul .logo2 img{
-        margin-top: 0.7rem;
+        margin-top: 0.2rem;
         margin-left: 2rem;
         width: 27%;
     }
@@ -289,7 +289,7 @@ nav .book:hover{
     .hero input{
         /* display: none; */
         /* width: 70%; */
-        margin-top: -5rem;
+        margin-top: -8rem;
         margin-left: 1rem;
         z-index: 1000;
         position: fixed;
