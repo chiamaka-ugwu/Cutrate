@@ -5,13 +5,13 @@ var body = document.getElementById("body");
 var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
 var search = document.getElementById("search");
-   
+  
 
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
-    menuIcon.style.display = "none";
-    close.style.display = "block";
+    // menuIcon.style.display = "none";
+    // close.style.display = "block";
     body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     body.style.zIndex = "1000";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";

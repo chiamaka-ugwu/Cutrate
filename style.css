@@ -29,6 +29,7 @@ nav{
 }
 nav .logo{
     display: inline;
+    margin-left: 5rem;
 }
 nav svg{
     display: none;
@@ -176,9 +177,13 @@ nav .book:hover{
         border-bottom: 2px solid #BF9553;
         z-index: 100;
     }
+    nav .logo{
+        width: 100%;
+    }
     nav .logo img{
-        margin-top: 0.3rem;
+        margin-top: 1rem;
         margin-left: -3rem;
+        width: 15%;
     }
     nav svg{
         display: block;
@@ -205,14 +210,16 @@ nav .book:hover{
     }
     nav ul .logo2{
         display: block;
+        height: 13vh;
     }
-    nav ul img{
-        margin-left: -3rem;
+    nav ul .logo2 img{
+        margin-top: 0.7rem;
+        margin-left: 2rem;
+        width: 27%;
     }
     nav ul .border{
         width: 99%;
         border: 1px solid #BF9553;
-        /* margin-top: -2.05rem; */
     }
     nav ul li{
         display: block;
@@ -235,7 +242,7 @@ nav .book:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 100vh;
+        height: 86vh;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/mobile.png);
         position: relative;
         background-size: cover;
@@ -250,7 +257,7 @@ nav .book:hover{
     .hero input{
         /* display: none; */
         /* width: 70%; */
-        margin-top: -4rem;
+        margin-top: -4.5rem;
         margin-left: 1rem;
         z-index: 1000;
         position: fixed;
@@ -262,8 +269,8 @@ nav .book:hover{
         color: rgba(189, 147, 236, 0.8);
     }
     .hero .text{
-        position: absolute;
-        bottom: 8rem;
+        position: fixed;
+        bottom: 4rem;
         z-index: 10;
     }
     .hero .text h2{
