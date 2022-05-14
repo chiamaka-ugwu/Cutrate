@@ -48,6 +48,9 @@ if(x.matches){
             search.style.zIndex = "1000";
         }
     }
+    if(search.onfocus){
+        text.style.bottom = "0rem";
+    }
 }
 
 

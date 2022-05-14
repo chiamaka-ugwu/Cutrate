@@ -272,7 +272,7 @@ nav .book:hover{
     }
     .hero .text{
         position: absolute;
-        bottom: 4rem;
+        bottom: 6rem;
         z-index: 10;
     }
     .hero .text h2{
