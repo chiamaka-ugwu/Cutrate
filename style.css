@@ -232,16 +232,15 @@ nav .book:hover{
         margin: 2rem;        
     }
     nav ul{
+        display: none;
         position: absolute;
         left: 0;
-        width: 0;
+        width: 55%;
         height: 100vh;
         background-color: white;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
         padding-top: 0.3rem;
         margin-top: -2rem;
-        transition: 0.5s;
-        overflow-x: hidden;
     }
     nav ul .logo2{
         display: block;

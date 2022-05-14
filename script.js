@@ -1,7 +1,7 @@
 var menuIcon = document.getElementById("menu-icon");
 var close = document.getElementById("close");
 var dropDown = document.getElementById("dropdown");
-var body = document.getElementById("body");
+var blur = document.getElementById("blur");
 var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
 var search = document.getElementById("search");
@@ -10,9 +10,9 @@ var text = document.getElementById("text");
 
 
 menuIcon.addEventListener("click", function(){    
-    dropDown.style.width = "55%";
-    body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    body.style.zIndex = "1000";
+    dropDown.style.display = "block";
+    blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    blur.style.zIndex = "1000";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
     nav.style.zIndex = "100000";
 })
@@ -34,9 +34,9 @@ const x = window.matchMedia("(max-width: 1000px)");
 if(x.matches){
     document.onclick = function(e){
         if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
-            dropDown.style.width = "0";
-            body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-            body.style.zIndex = "1";
+            dropDown.style.display = "none";
+            blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
+            blur.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
             nav.style.zIndex = "1000000";
         }
