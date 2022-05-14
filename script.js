@@ -11,13 +11,10 @@ var text = document.getElementById("text");
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
-    // menuIcon.style.display = "none";
-    // close.style.display = "block";
     body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     body.style.zIndex = "1000";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
     nav.style.zIndex = "100000";
-    search.style.zIndex = "100";
 })
 
 
@@ -29,7 +26,6 @@ close.addEventListener("click", function(){
     body.style.zIndex = "1";
     nav.style.backgroundColor = "#fff";
     nav.style.zIndex = "100";
-    search.style.zIndex = "1000";
 
 })
 
@@ -39,17 +35,11 @@ if(x.matches){
     document.onclick = function(e){
         if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
             dropDown.style.display = "none";
-            menuIcon.style.display = "block";
-            close.style.display = "none";
             body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
             body.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
-            nav.style.zIndex = "100";
-            search.style.zIndex = "1000";
+            nav.style.zIndex = "1000000";
         }
-    }
-    if(search.onfocus){
-        text.style.bottom = "0rem";
     }
 }
 
