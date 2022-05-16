@@ -311,7 +311,6 @@ nav .book:hover{
         position: absolute;
         z-index: 5;
         margin-top: 0;
-        bottom: 5rem;
     }
     .hero .text h2{
         font-size: 2rem;
