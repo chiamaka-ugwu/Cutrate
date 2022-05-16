@@ -101,7 +101,8 @@ nav .book{
     font-size: 1rem;
 }
 nav .book:hover{
-    background-color: #775d34;
+    background-color: #7c5b26d3;
+    color: #fff;
 }
 
 
@@ -199,7 +200,7 @@ nav .book:hover{
     nav #mobile_search{
         display: inline;
         margin-top: 1.5rem;
-        margin-left: 2rem;
+        margin-left: 8rem;
         position: absolute;
         width: 40%;
         border: 1px solid #BF9553;
