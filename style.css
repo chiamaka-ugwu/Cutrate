@@ -191,6 +191,7 @@ nav .book:hover{
         height: 12vh;
         border-bottom: 1px solid #BF9553;
         z-index: 10;
+        background-color: red;
     }
     nav .logo img{
         margin-top: 0.3rem;
