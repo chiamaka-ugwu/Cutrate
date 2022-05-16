@@ -42,7 +42,6 @@ nav .logo img{
 }
 nav #mobile_search{
     display: none;
-    
 }
 nav svg{
     display: none;
@@ -212,7 +211,7 @@ nav .book:hover{
         outline: none;
         color: #66369D;
     }
-    nav .search-bar #mobile_search::placeholder{
+    nav #mobile_search::placeholder{
         color: #BD93ECCC;
         font-size: 0.975rem;
     }
