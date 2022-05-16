@@ -14,7 +14,7 @@ var mobile_search = document.getElementById("mobile_search");
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
     blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    mobile_search.style.backgroundColor = "rgba(0, 0, 0, 0.04)";
+    mobile_search.style.backgroundColor = "rgba(0, 0, 0, 0.03)";
     blur.style.zIndex = "100";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
     nav.style.zIndex = "100000";
