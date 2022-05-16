@@ -191,7 +191,7 @@ nav .book:hover{
         height: 12vh;
         border-bottom: 1px solid #BF9553;
         z-index: 10;
-        background-color: red;
+        background-color: white;
     }
     nav .logo img{
         margin-top: 0.3rem;
@@ -295,24 +295,11 @@ nav .book:hover{
         background-color: rgba(50, 12, 94, 0.2);
         z-index: 1;
     }
-    /* .hero input{
-        display: none;
-        width: 70%;
-        margin-top: -8rem;
-        margin-left: 1rem;
-        z-index: 1000;
-        position: fixed;
-        background-color: #fff;
-        color: #66369D;
-        background-image: url(./images/search.png);
-    }
-    .hero input::placeholder{
-        color: rgba(189, 147, 236, 0.8);
-    } */
     .hero .text{
         position: absolute;
         z-index: 5;
         margin-top: 0;
+        bottom: 0;
     }
     .hero .text h2{
         font-size: 2rem;
