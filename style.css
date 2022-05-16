@@ -40,12 +40,9 @@ nav .logo img{
     margin-top: 0.2rem;
     width: 55px;
 }
-nav .field{
-    display: inline;
-    margin-top: -3rem;
-}
-nav #search1{
+nav #mobile_search{
     display: none;
+    
 }
 nav svg{
     display: none;
@@ -56,8 +53,8 @@ nav #close{
 nav ul{
     float: right;
     position: relative;
-    top: 2rem;
-    right: 5rem;
+    top: 1.2rem;
+    right: 3rem;
 }
 nav ul .logo2{
     display: none;
@@ -77,6 +74,23 @@ nav ul li a:hover{
 nav ul li a.active{
     color: #BF9553;
     text-decoration: underline;
+}
+nav ul .links li #search{
+    width: 20%;
+    border: 1px solid #BF9553;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-image: url(./images/search.png);
+    background-position: 10px 12px; 
+    background-repeat: no-repeat;
+    padding: 9px;
+    padding-left: 35px;
+    outline: none;
+    color: #66369D;
+}
+nav ul .links li #search::placeholder{
+    color: #BD93ECCC;
+    font-size: 0.975rem;
 }
 nav .book{
     padding: 10px 40px;
@@ -110,27 +124,6 @@ nav .book:hover{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-}
-/* .hero input{
-    margin-top: 7rem;
-    margin-bottom: 7rem;
-    width: 40%;
-    border: 1px solid #BF9553;
-    border-radius: 10px;
-    font-size: 1rem;
-    background-image: url(./images/search-icon.png);
-    background-position: 10px 12px; 
-    background-repeat: no-repeat;
-    padding: 10px;
-    padding-left: 35px;
-    outline: none;
-    color: #fff;
-    background-color: #bf965381;
-} */
-.hero input::placeholder{
-    font-size: 1rem;
-    color: #fff;
-    opacity: 0.7;
 }
 .hero .text{
     text-align: center;
@@ -195,16 +188,18 @@ nav .book:hover{
     nav{
         height: 12vh;
         border-bottom: 1px solid #BF9553;
-        z-index: 100;
+        z-index: 10;
     }
     nav .logo img{
         margin-top: 0.3rem;
         margin-left: -3rem;
         width: 60px;
     }
-    nav #search1{
-        /* display: inline; */
-        display: none;
+    nav #mobile_search{
+        display: inline;
+        margin-top: 1.5rem;
+        margin-left: 2rem;
+        position: absolute;
         width: 40%;
         border: 1px solid #BF9553;
         border-radius: 10px;
@@ -212,17 +207,19 @@ nav .book:hover{
         background-image: url(./images/search.png);
         background-position: 10px 12px; 
         background-repeat: no-repeat;
-        padding: 10px;
+        padding: 9px;
         padding-left: 35px;
         outline: none;
         color: #66369D;
-        background-color: #fff;
-        margin-left: 2rem;
+    }
+    nav .search-bar #mobile_search::placeholder{
+        color: #BD93ECCC;
+        font-size: 0.975rem;
     }
     nav svg{
         display: block;
         float: right;
-        margin: 2rem 2rem 0 2rem;
+        margin: 1.8rem 2rem 0 2rem;
     }
     nav #close{
         display: none;
@@ -241,6 +238,8 @@ nav .book:hover{
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
         padding-top: 0.3rem;
         margin-top: -2rem;
+        top: 2rem;
+
     }
     nav ul .logo2{
         display: block;
@@ -264,6 +263,9 @@ nav .book:hover{
     nav ul li a{
         font-size: 1.2rem;
         transition: 0.3s;
+    }
+    nav ul .links li #search{
+        display: none;
     }
     nav .links{
         margin-top: 2rem;
@@ -305,7 +307,7 @@ nav .book:hover{
     } */
     .hero .text{
         position: absolute;
-        z-index: 10;
+        z-index: 5;
     }
     .hero .text h2{
         font-size: 2rem;

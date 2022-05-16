@@ -6,13 +6,16 @@ var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
 var search = document.getElementById("search");
 var text = document.getElementById("text");
- 
+var hero = document.getElementById("hero");
+var mobile_search = document.getElementById("mobile_search");
+
 
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
     blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    blur.style.zIndex = "1000";
+    mobile_search.style.backgroundColor = "rgba(0, 0, 0, 0.04)";
+    blur.style.zIndex = "100";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
     nav.style.zIndex = "100000";
 })
@@ -25,7 +28,7 @@ close.addEventListener("click", function(){
     body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
     body.style.zIndex = "1";
     nav.style.backgroundColor = "#fff";
-    nav.style.zIndex = "100";
+    nav.style.zIndex = "10";
 
 })
 
@@ -39,6 +42,8 @@ if(x.matches){
             blur.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
             nav.style.zIndex = "1000000";
+            mobile_search.style.backgroundColor = "#fff";
+
         }
     }
 }
