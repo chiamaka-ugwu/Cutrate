@@ -13,6 +13,8 @@ var mobile_search = document.getElementById("mobile_search");
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
+    menuIcon.style.display = "none";
+    close.style.display = "block"
     blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
     blur.style.zIndex = "100";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
@@ -23,11 +25,11 @@ menuIcon.addEventListener("click", function(){
 close.addEventListener("click", function(){    
     dropDown.style.display = "none";
     menuIcon.style.display = "block";
-    close.style.display = "none";
-    body.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-    body.style.zIndex = "1";
+    close.style.display = "none"
+    blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
+    blur.style.zIndex = "1";
     nav.style.backgroundColor = "#fff";
-    nav.style.zIndex = "10";
+    nav.style.zIndex = "1000000";
 
 })
 
@@ -37,11 +39,12 @@ if(x.matches){
     document.onclick = function(e){
         if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
             dropDown.style.display = "none";
+            menuIcon.style.display = "block";
+            close.style.display = "none"
             blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
             blur.style.zIndex = "1";
             nav.style.backgroundColor = "#fff";
             nav.style.zIndex = "1000000";
-
         }
     }
 }
