@@ -286,7 +286,7 @@ nav .book:hover{
         display: none;
         position: absolute;
         left: 0;
-        width: 55%;
+        width: 60%;
         height: 100vh;
         background-color: white;
         box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.26);
@@ -311,6 +311,7 @@ nav .book:hover{
     nav ul li{
         display: block;
         margin-top: 1rem;
+        margin-left: 1rem;
         margin-bottom: 2rem;
 
     }
@@ -325,7 +326,8 @@ nav .book:hover{
         margin-top: 2rem;
     }
     nav .book{
-        padding: 8px 30px;
+        /* padding: 8px 30px; */
+        padding: 5% 15% ;
         font-size: 1.2rem;
     }
 
@@ -337,6 +339,7 @@ nav .book:hover{
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(./images/mobile.png);
         position: relative;
         background-size: cover;
+        margin-top: 4.6rem;
     }
     .hero #blur{
         width: 100%;
@@ -345,20 +348,6 @@ nav .book:hover{
         background-color: rgba(50, 12, 94, 0.2);
         z-index: 1;
     }
-    /* .hero input{
-        display: none;
-        width: 70%;
-        margin-top: -8rem;
-        margin-left: 1rem;
-        z-index: 1000;
-        position: fixed;
-        background-color: #fff;
-        color: #66369D;
-        background-image: url(./images/search.png);
-    }
-    .hero input::placeholder{
-        color: rgba(189, 147, 236, 0.8);
-    } */
     .hero .text{
         position: absolute;
         z-index: 5;
