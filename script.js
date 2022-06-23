@@ -4,21 +4,16 @@ var dropDown = document.getElementById("dropdown");
 var blur = document.getElementById("blur");
 var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
-var search = document.getElementById("search");
 var text = document.getElementById("text");
 var hero = document.getElementById("hero");
-var mobile_search = document.getElementById("mobile_search");
-
-
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
     menuIcon.style.display = "none";
-    close.style.display = "block"
-    blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    blur.style.zIndex = "100";
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-    nav.style.zIndex = "100000";
+    close.style.display = "block";
+    blur.style.display = "block";
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    nav.style.borderBottom = "1px solid rgba(0, 0, 0, 0.01)";
 })
 
 
@@ -26,25 +21,22 @@ close.addEventListener("click", function(){
     dropDown.style.display = "none";
     menuIcon.style.display = "block";
     close.style.display = "none"
-    blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-    blur.style.zIndex = "1";
+    blur.style.display = "none";
     nav.style.backgroundColor = "#fff";
-    nav.style.zIndex = "1000000";
-
+    nav.style.borderBottom = "1px solid #BF9553";
 })
 
 
 const x = window.matchMedia("(max-width: 1000px)");
 if(x.matches){
     document.onclick = function(e){
-        if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
+        if(e.target.id !== "dropdown" && e.target.id !== "menu-icon" && e.target.id !== "dropdownMenuLink"){
             dropDown.style.display = "none";
             menuIcon.style.display = "block";
             close.style.display = "none"
-            blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-            blur.style.zIndex = "1";
+            blur.style.display = "none";
             nav.style.backgroundColor = "#fff";
-            nav.style.zIndex = "1000000";
+            nav.style.borderBottom = "1px solid #BF9553";      
         }
     }
 }
@@ -62,3 +54,44 @@ if(active.matches){
         });
       }
 }
+
+
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#id_password');
+ 
+togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+const togglePassword2 = document.querySelector('#togglePassword2');
+const password2 = document.querySelector('#id_password2');
+ 
+togglePassword2.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+    password2.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+
+
+
+
+const box_one = document.getElementById("hide");
+const box_two = document.getElementById("show");
+let next = document.getElementsById("buttonX");
+const back = document.getElementsById("back");
+
+
+
+
+document.querySelectorAll(".image-container img").forEach(image => {
+    image.onclick = () => {
+
+    }
+})
