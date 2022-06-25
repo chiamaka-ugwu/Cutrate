@@ -141,7 +141,7 @@ nav i:hover{
 /* HERO DESKTOP */
 .hero{
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background-image: url(./images/hero2.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -149,11 +149,10 @@ nav i:hover{
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
 }
 .hero .text{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 .hero .text h2{
     color: #BF9553;
@@ -174,7 +173,7 @@ nav i:hover{
     color: #BF9553;
     font-weight: 400;
     font-size: 1.5rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
 }
 .hero .text #coming-soon{
     animation: breath 2s ease infinite;
@@ -332,7 +331,7 @@ nav i:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 110vh;
+        height: 100vh;
         background-image: url(./images/hero-mobile.png);
         margin-top: 13vh;
     }
@@ -343,6 +342,9 @@ nav i:hover{
         position: fixed;
         z-index: 1000;
         background-color: rgba(0, 0, 0, 0.3);
+    }
+    .hero .text{
+        margin-top: -1rem;
     }
     .hero .text h2{
         font-size: 2rem;
