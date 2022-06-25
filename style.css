@@ -331,7 +331,7 @@ nav i:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 100vh;
+        height: 120vh;
         background-image: url(./images/hero-mobile.png);
         margin-top: 13vh;
     }
@@ -344,7 +344,7 @@ nav i:hover{
         background-color: rgba(0, 0, 0, 0.3);
     }
     .hero .text{
-        margin-top: -1rem;
+        margin-top: -4rem;
     }
     .hero .text h2{
         font-size: 2rem;
