@@ -266,14 +266,16 @@ nav i:hover{
         margin-left: -3rem;
         width: 60px;
     }
-    nav svg{
+    nav #menu-icon{
         display: block;
         float: right;
+        font-size: 25px;
+        color: #BF9553;
         margin: 1.8rem 2rem 0 2rem;
     }
     nav #close{
         display: none;
-        font-size: 35px;
+        font-size: 30px;
         color: #BF9553;
         float: right;
         margin: 1.8rem 2rem 0 2rem;
@@ -331,9 +333,10 @@ nav i:hover{
 
     /* HERO MOBILE */
     .hero{
-        height: 120vh;
+        height: auto;
         background-image: url(./images/hero-mobile.png);
         margin-top: 13vh;
+        padding: 6rem 0;
     }
     #blur{
         display: none;
