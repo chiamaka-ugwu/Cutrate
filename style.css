@@ -279,6 +279,95 @@ nav i:hover{
 }
 
 
+/* FOOTER DESKTOP */
+footer{
+    width: 100%;
+    background-color: #66369D;
+    color: #fff;
+}
+footer .body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    border-bottom: 1px solid #BF9553;
+}
+footer article{
+    width: 55%;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+}
+footer article .box{
+    width: 50%;
+}
+footer .logo{
+    width: 100%;
+}
+footer .logo img{
+    width: 70px;
+}
+footer article p{
+    font-size: 1.125rem;
+}
+footer article .two h3, .three h3, .four h3{
+    margin-top: 1.5rem;
+    font-size: 1.7rem;
+    font-family: Californian FB;
+    font-weight: 400;
+}
+footer a{
+    width: fit-content;
+    display: block;
+    font-size: 1.125rem;
+    line-height: 2;
+    color: #fff;
+}
+footer a:hover{
+    color: #BF9553;
+}
+footer i{
+    font-size: 1.3rem;
+    margin-right: 1rem;
+    color: #BF9553;
+    margin-top: 0.3rem;
+}
+footer article .one i{
+    font-size: 1.5rem;
+}
+footer i:hover{
+    color: #fff;
+}
+footer .socials{
+    display: flex;
+}
+footer .location{
+    display: flex;
+    margin-top: 0.5rem;
+}
+footer aside{
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 2rem;
+}
+footer aside .box{
+    width: 50%;
+    margin: 1.2rem;
+}
+footer aside a{
+    text-decoration: none;
+}
+footer .credits{
+    padding: 20px;
+    text-align: center;
+}
+footer .credits p{
+    font-size: 1.2rem;
+}
+
+
+
 
 /* NAV MOBILE */
 @media screen and (max-width:1000px){
@@ -428,5 +517,44 @@ nav i:hover{
         margin-top: 3rem;
     }
     
+
+    /* FOOTER MOBILE */
+    footer{
+        height: auto;
+        margin-top: -0.5rem;
+    }
+    footer .body{
+        flex-flow: column wrap;
+    }
+    footer article{
+        width: 100%;
+        flex-flow: column wrap;
+        margin-top: 2rem;
+    }
+    footer article .box{
+        width: 85%;
+        margin: auto;
+        /* background-color: red; */
+    }
+    footer article .two{
+        margin-top: 0rem;
+    }
+    footer aside{
+        width: 95%;
+        flex-flow: column wrap;
+        margin-left: 0.8rem;
+        margin-top: 0;
+        margin-bottom: 3rem;
+    }
+    footer aside .box{
+        width: 90%;
+        margin: auto;
+        background-color: #BF9553;
+    }
+    footer .credits{
+        width: 70%;
+        margin: auto;
+    }
+
     
 }
