@@ -360,8 +360,7 @@ nav i:hover{
     .hero{
         height: auto;
         background-image: url(./images/hero-mobile.png);
-        margin-top: 13vh;
-        padding: 6rem 0;
+        padding: 12rem 0 6rem 0;
     }
     #blur{
         display: none;
