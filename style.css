@@ -293,10 +293,12 @@ footer .body{
     border-bottom: 1px solid #BF9553;
 }
 footer article{
-    width: 55%;
+    width: 90%;
     margin: auto;
     display: flex;
     flex-flow: row nowrap;
+    /* justify-content: space-between; */
+    padding-top: 2rem;
 }
 footer article .box{
     width: 50%;
