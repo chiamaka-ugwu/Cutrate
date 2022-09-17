@@ -42,7 +42,7 @@ nav .logo img{
     margin-top: 0.2rem;
     width: 55px;
 }
-nav svg{
+nav #menu-icon{
     display: none;
 }
 nav #close{
@@ -51,7 +51,7 @@ nav #close{
 nav ul{
     float: right;
     position: relative;
-    margin-top: 1.2rem;
+    margin-top: 1.5rem;
     margin-right: 5rem;
 }
 nav ul .logo2{
@@ -62,7 +62,7 @@ nav ul .border{
 }
 nav li{
     display: inline;
-    margin-left: 2rem;
+    margin-left: 1.8rem;
 }
 nav ul li a{
     color: #66369D;
@@ -251,13 +251,39 @@ nav i:hover{
     margin-right: 1rem;
 }
 
+.affiliate-form{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+.affiliate-form input, select{
+    padding: 10px;
+    border: 1px solid #66369D;
+    outline: none;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.affiliate-form select{
+    background-color: white;
+    color: gray;
+}
+.affiliate-submit{
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    background-color: #BF9553;
+    border: none;
+    outline: none;
+}
 
 
 
 /* NAV MOBILE */
 @media screen and (max-width:1000px){
     nav{
-        height: 13vh;
+        height: auto;
         border-bottom: 1px solid #BF9553;
         z-index: 1000000;
     }
@@ -271,14 +297,14 @@ nav i:hover{
         float: right;
         font-size: 25px;
         color: #BF9553;
-        margin: 1.8rem 2rem 0 2rem;
+        margin: 2rem 2rem 0 2rem;
     }
     nav #close{
         display: none;
         font-size: 30px;
         color: #BF9553;
         float: right;
-        margin: 1.8rem 2rem 0 2rem;
+        margin: 2rem 2rem 0 2rem;
     }
     nav ul{
         display: none;
@@ -307,7 +333,6 @@ nav i:hover{
     }
     nav ul li{
         display: block;
-        margin-top: 1rem;
         margin-left: 0rem;
         margin-bottom: 1.5rem;
     }
@@ -397,5 +422,12 @@ nav i:hover{
         width: 10%;
         margin-right: 0.5rem;
     }
+    .affiliate-form{
+        width: 90%;
+    }
+    .aff-modal{
+        margin-top: 3rem;
+    }
+    
     
 }
