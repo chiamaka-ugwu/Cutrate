@@ -12,7 +12,8 @@ menuIcon.addEventListener("click", function(){
     menuIcon.style.display = "none";
     close.style.display = "block";
     blur.style.display = "block";
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    nav.style.backgroundColor = 'rgba(255, 255, 255, 0.725)'
+    // nav.style.backgroundColor = "rgba(0, 0, 0, 0.01)";
     nav.style.borderBottom = "1px solid rgba(0, 0, 0, 0.01)";
 })
 
